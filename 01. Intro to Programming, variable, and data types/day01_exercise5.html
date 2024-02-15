@@ -1,0 +1,20 @@
+<script>
+  //prompt : popout penerima input// menerima input user dalam bentuk tipe data script
+  alert ("menghitung selisih hari")
+
+  let input1 = prompt("tanggal pertama :")
+  let input2 = prompt("tanggal kedua :")
+
+  let sec1 = new Date(input1)
+  let sec2 = new Date(input2)
+
+  let time1 = sec1.getTime()
+  let time2 = sec2.getTime()
+
+  let result = (time2-time1)/86400/1000
+
+  alert (`selisih hari : ${result}`)
+
+
+
+</script>

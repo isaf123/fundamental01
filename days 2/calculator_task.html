@@ -1,0 +1,55 @@
+<script>
+
+  let result = ""
+  let proceed = true
+
+  while(proceed){
+    operator = prompt("A. Penjumlahan\nB. Pengurangan\nC. Perkalian\nD. Pembagian");
+    
+    if(operator === "a"){
+      input1 = Number(prompt("nilai pertama"));
+      input2 = Number(prompt("nilai kedua"));
+      result = input1 + input2
+
+    }else if(operator === "b"){
+      input1 = Number(prompt("nilai pertama"));
+      input2 = Number(prompt("nilai kedua"));
+      result = input1-input2
+
+    }else if(operator === "c"){
+      input1 = Number(prompt("nilai pertama"));
+      input2 = Number(prompt("nilai kedua"));
+      result = input1*input2
+
+    }else if(operator === "d"){
+      input1 = Number(prompt("nilai pertama"));
+      input2 = Number(prompt("nilai kedua"));
+      result = input1/input2
+
+    }else{
+      result = alert("tidak ada menu")
+      respon = confirm("lanjut atau tidak")
+      if(respon != true){
+        proceed = false
+      }else {
+        proceed = true
+      }
+    };
+
+ 
+
+    if(result){
+      alert(result);
+      respon = confirm("lanjut atau tidak ?");
+
+      if(respon != true){
+        proceed = false
+      }else{
+        proceed = true;
+      }
+    }else{
+      proceed = false
+    }
+  }
+
+</script>

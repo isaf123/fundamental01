@@ -1,0 +1,25 @@
+<script>
+  //prompt : popout penerima input// menerima input user dalam bentuk tipe data script
+  alert ("Grade Nilai")
+
+  let examValue = prompt("masukkan nilai anda")
+  let value =""
+
+
+  //parse digunakan untuk mengambil number jika ada campuran huruf
+if(examValue >= 90 ){
+  value = "Grade A"
+} else if(examValue >= 80 && examValue < 90){
+  value = "Grade B"
+} else if(examValue >= 70 && examValue < 80){
+  value = "Grade C"
+} else if(examValue > 0){
+  value = "Grade D"
+} else{
+  value = "Tidak Terdefinisi"
+};
+
+
+alert(value)
+
+</script>
